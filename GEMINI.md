@@ -18,5 +18,11 @@ When the user asks to "compile" or "update the wiki":
     d. Move processed files from `raw/` to a `raw/archive/` folder (created as needed).
 3. Automatically link new concepts to related existing files.
 
+## Multi-Device Strategy (The Bridge)
+Since the Gemini CLI sunset is approaching (June 18, 2026), this wiki follows a **"Portable Data, Federated Processing"** model:
+- **Termux (Mobile Input)**: Use Termux for fast capture in `raw/` and manual edits in `wiki/`.
+- **GitHub (Sync)**: Always push changes to GitHub.
+- **Desktop/VPS (Agent Processing)**: Use a device where the **Antigravity CLI (`agy`)** or other modern agents work natively to perform the "Compilation" and "Synthesis" tasks. The `GEMINI.md` and `wiki/` structure remain identical across all platforms.
+
 ## Git Integration
 After significant changes, propose a git commit message and wait for user approval to push.
